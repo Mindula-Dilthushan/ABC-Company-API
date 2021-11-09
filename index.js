@@ -25,7 +25,10 @@ app.use(itemRoute)
 app.use(loginRoute)
 
 //mongoDB connect
-const URI = `mongodb+srv://alpha:${env.PASSWORD}@cluster0.7xa41.mongodb.net/${env.DATABASE}?retryWrites=true&w=majority`
+
+
+const URI = `mongodb+srv://kavindu:${env.PASSWORD}@cluster0.q46ot.mongodb.net/${env.DATABASE}?retryWrites=true&w=majority`
+
 
 //server start
 mongoose.connect(URI, {useUnifiedTopology:true, useNewUrlParser:true}).
