@@ -8,6 +8,7 @@ const mongoose = require('mongoose')
 //requiring routers
 const baseRoute = require("./routes/baseroute")
 const itemRoute = require("./routes/ItemRoute")
+const loginRoute = require("./routes/loginRoute")
 
 
 //configuring dotenv(to access process.env)
@@ -15,11 +16,13 @@ dotenv.config()
 const env = process.env
 
 const itemModel = require("./model/ItemModel")
+const loginModel = require("./model/LoginModel")
 
 
 //app use
 app.use(baseRoute)
 app.use(itemRoute)
+app.use(loginRoute)
 
 //mongoDB connect
 const URI = `mongodb+srv://alpha:${env.PASSWORD}@cluster0.7xa41.mongodb.net/${env.DATABASE}?retryWrites=true&w=majority`
