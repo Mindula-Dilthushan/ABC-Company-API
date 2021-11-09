@@ -9,9 +9,12 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "^4.17.1",
     "http-errors": "~1.6.3",
+    "mongoose": "^6.0.12",
     "morgan": "~1.9.1",
-    "stylus": "0.54.5"
+    "nodemon": "^2.0.14",
+    "stylus": "0.54.5",
+    "dotenv": "^10.0.0"
   }
 }
