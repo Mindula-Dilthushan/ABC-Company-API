@@ -27,7 +27,8 @@ app.use(loginRoute)
 //mongoDB connect
 
 
-const URI = `mongodb+srv://kavindu:${env.PASSWORD}@cluster0.q46ot.mongodb.net/${env.DATABASE}?retryWrites=true&w=majority`
+
+const URI = `mongodb+srv://kavindu:${env.PASSWORD}@cluster0.hft5d.mongodb.net/${env.DATABASE}?retryWrites=true&w=majority`
 
 
 //server start
